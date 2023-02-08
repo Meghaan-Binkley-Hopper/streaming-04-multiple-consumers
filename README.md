@@ -33,7 +33,7 @@ Explore the RabbitMQ website.
 
 1. Run listening_worker.py
 
-Will it terminate on its own? How do you know? 
+Will it terminate on its own? How do you know? It will not terminate on its own.  It requires a CTRL+C to quit.
 
 ## Ready for Work
 
@@ -45,9 +45,9 @@ Will it terminate on its own? How do you know?
 
 Follow the tutorial. 
 Add multiple tasks (e.g. First message, Second message, etc.)
-How are tasks distributed? 
+How are tasks distributed? Tasks are split between the two workers.  
 Monitor the windows with at least two workers. 
-Which worker gets which tasks?
+Which worker gets which tasks? Worker 1 received first, second, forth, and sixth. Worker 2 received third, fifth, and sixth.
 
 
 ## Reference
@@ -58,3 +58,11 @@ Which worker gets which tasks?
 ## Screenshot
 
 See a running example with at least 3 concurrent process windows here:
+#Emitter
+![Emitter](v3_emitter.PNG)
+
+#Listening Window 1
+![Listening WIndow 1](v3_listening.PNG)
+
+#Listening Window 2
+![Listening Window 2](v3_listening2.PNG)
